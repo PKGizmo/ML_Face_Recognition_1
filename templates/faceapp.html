@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block bodyblock %}
+    <div class="container custom-main">
+        <div class="faceapp-container">
+            <h3>Aplikacja do Rozpoznawania Twarzy i Predykcji Płci</h3>
+            <p class="faceapp-content">
+                Przeprowadzimy <span class="span-green-1 span-bold">klasyfikację płci</span> z twarzy wykrytej na wgranym na stronę zdjęciu. "Pod maską" znajduje się wyuczony i zoptymalizowany <span class="span-green-1 span-bold">Model Uczenia Maszynowego</span>. Gdy tylko użytkownik wgra zdjęcie poprzez poniższy interfejs, zostanie ono poddane obróbce: nadana zostanie skala szarości, zostanie wykryta twarz (przy pomocy klasyfikatora Haar), zdjęcie zostanie obcięte, by obejmowało tylko wykrytą twarz. Następnie zostanie przekształcone w eigenimage i ostatecznie przeprowadzona zostanie predykcja płci. Wszystko przy użyciu Pythona i biblioteki Flask.
+            </p>
+
+            <img src="{{url_for('static', filename='images/002.PNG')}}" alt="Faceapp" width="600">
+            <br><br>
+            <a class="btn btn-outline-primary" href="{{url_for('gender')}}">Wypróbuj!</a>
+        </div>
+    </div>
+{% endblock %}

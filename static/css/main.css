@@ -1,0 +1,51 @@
+body {
+    background-color: darkgray;
+}
+
+.custom-main h3 {
+    text-align: center;
+    margin-top: 32px
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 118, 90);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.custom-main h3 {
+    text-align: center;
+    margin-top: 32px
+}
+
+.span-green-1 {
+    color: rgb(41, 118, 90)
+}
+
+.span-bold {
+    font-weight: bold;
+}
+
+.faceapp-content {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.faceapp-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pad-top-30 {
+    padding-top: 30px;
+}
+
+.faceapp-text {
+    font-size: 24px;
+}

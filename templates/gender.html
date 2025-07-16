@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block bodyblock %}
+<div class="container custom-main">
+    <div class="faceapp-container">
+        <h3><span class="span-green-1 span-bold">Klasyfikacja Płci</span></h3>
+
+        <div class="container">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="upload">Wgraj zdjęcie do predykcji</label>
+                <input id="upload" type="file" name="image" required="true">
+                <br><br>
+                <input type="submit" value="Wgranie & Predykcja">
+            </form>
+
+        </div>
+
+        {% if fileupload %}
+
+            <div class="container pad-top-30">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="faceapp-text">{{ text_1 }}</span>
+                        <img src="{{url_for('static',filename='uploads/')}}{{img_name}}" width="{{ w }}" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="faceapp-text">{{ text_2 }}</span>
+                        <img src="{{url_for('static',filename='predict/')}}{{img_name}}" width="{{ w }}" alt="">
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
